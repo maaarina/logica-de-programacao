@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operadores de comparação</h1>
+
+    <p>Problema: Pedir para o usuário digitar dois numeros e mostrar um boolean indicando se a média for maior que 5. </p>
+
+    <script>
+
+        var valorUm = parseFloat(prompt ("Digite um número"));
+
+        var valorDois = prompt ("Digite outro numero");
+        valorDois = parseFloat(valorDois);
+
+        var media = (valorUm + valorDois)/2 ;
+
+        if (media > 5) {
+            alert ("true");
+        }
+        
+        else {
+            alert ("false");
+        }
+        
+    </script>
+    
+</body>
+</html>
