@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+
+<body>
+    <h1>Exercício</h1>
+</body>
+<script>
+    //fazer jogador1 digitar um numero 
+    //fazer jogador2 digitar outro numero
+    //se forem iguais mostrar mensagem "empate"
+    //sortear um numero entre 0 e 1
+    //se o numero sorteado for 0, ganha quem escolher o numero menor
+    //se o numero sorteado for 1, ganha quem escolher o numero maior
+
+
+    var jogador1 = prompt("Jogador 1, digite um número");
+    jogador1 = parseFloat(jogador1);
+    
+    var jogador2 = prompt("Jogador 2, digite um numero");
+    jogador2 = parseFloat(jogador2);
+    
+    if (jogador1 == jogador2) {
+
+        alert("voces empataram!! Os números foram " + jogador1 + " e " + jogador2); 
+
+    } else {
+
+        var sorteio = parseInt(Math.round() * 2); 
+
+        if (sorteio === 0) {
+
+            if (jogador1 < jogador2) {
+
+                alert ("Jogador 1 é o vencedor!");
+
+            } else {
+
+                alert ("Jogador 2 é o vencedor!");
+
+            }
+
+        } else {
+
+            if (jogador1 > jogador2) {
+
+                alert ("Jogador 1 é o vencedor!");
+
+            } else {
+
+                alert (" Jogador 2 é o vencedor");
+                
+            }
+        }
+    }
+    
+
+
+
+</script>
+
+</html>
