@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação - Operadores Lógicos</title>
+</head>
+
+<body>
+    <h1>Controle de decisão</h1>
+
+    <h2>Problema</h2>
+    <p>Pedir para o usuário digitar dois numeros e mostrar uma mensagem informando se foi aprovado ou não. Contudo, se qualquer uma das notas for zero, ele será reprovado.</p>
+
+    <hr>
+
+    <p>Se nota1 > 0 <strong>E</strong> nota2 > 0 <strong>E</strong> media > 5 <br> Mostra mensagem de parabens.
+        <br><br> se não <br> Mostra mensagem de reprovação.
+    </p>
+
+    <script>
+
+        var nome = prompt("Olá! Qual é o seu nome?");
+
+        var nota1 = prompt(nome + ", digite sua primeira nota");
+        nota1 = parseInt(nota1);
+
+        var nota2 = prompt("Agora digite sua segunda nota");
+        nota2 = parseInt(nota2);
+
+        var media = (nota1 + nota2) / 2;
+
+        if (nota1 != 0 && nota2 != 0 && media > 6) {
+            alert(nome + " parabéns! você foi aprovado! Sua média foi: " + media);
+        } else {
+            alert(nome + " foi reprovado! Sua média foi: " + media);
+        }
+
+    // Outra forma utilizando o operador "Ou":
+    //if (nota1 == 0 || nota2 == 0 || media < 6)  {
+    //    alert (nome + " foi reprovado(a) pois não alcançou a média. Sua média foi: " + media);
+    //}  else {
+    //    alert (nome + " parabéns! você foi aprovado(a)! Sua média foi: " + media);
+    //}
+    </script>
+
+</body>
+
+</html>
