@@ -22,46 +22,28 @@
 
     var jogador1 = prompt("Jogador 1, digite um número");
     jogador1 = parseFloat(jogador1);
-    
+
     var jogador2 = prompt("Jogador 2, digite um numero");
     jogador2 = parseFloat(jogador2);
-    
+
     if (jogador1 == jogador2) {
 
-        alert("voces empataram!! Os números foram " + jogador1 + " e " + jogador2); 
+        alert("voces empataram!! Os números foram " + jogador1 + " e " + jogador2);
+
+    }
+
+    var sorteio = parseInt(Math.random() * 2);
+    alert ("numero sorteado foi  " + sorteio + " então o ..." );
+
+    if (sorteio == 0 && jogador1 < jogador2 || sorteio == 1 && jogador1 > jogador2) {
+
+        alert("Jogador 1 ganhou!");
 
     } else {
 
-        var sorteio = parseInt(Math.round() * 2); 
+        alert("jogador 2 ganhou!");
 
-        if (sorteio === 0) {
-
-            if (jogador1 < jogador2) {
-
-                alert ("Jogador 1 é o vencedor!");
-
-            } else {
-
-                alert ("Jogador 2 é o vencedor!");
-
-            }
-
-        } else {
-
-            if (jogador1 > jogador2) {
-
-                alert ("Jogador 1 é o vencedor!");
-
-            } else {
-
-                alert (" Jogador 2 é o vencedor");
-                
-            }
-        }
     }
-    
-
-
 
 </script>
 
