@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de decisão</title>
+</head>
+
+<body>
+    <h2>
+        Problema: pedir para o usuário digitar um número de 1 a 6 e mostrar na tela uma mensagem diferente para cada número.
+    </h2>
+
+    <script>
+        var numero = prompt("Digite um número de 1 a 6");
+        numero = parseInt(numero);
+
+        switch(numero) {
+            case 1:
+                alert ("você escolheu o numero um!");
+                break;
+
+            case 2:
+                alert ("você escolheu o número dois!");
+                break;
+            
+            case 3: 
+                alert ("você escolheu o número três!");
+                break;
+
+            case 4:
+                alert ("você escolheu o número quatro!");
+                break;
+
+            case 5:
+                alert ("você escolheu o número cinco!");
+                break;
+            
+            case 6:
+                alert ("você escolheu o número seis!");
+                break;
+
+            default:
+                alert ("você não escolheu um número entre 1 e 6");
+                break;
+
+        }
+    </script>
+
+</body>
+
+</html>
