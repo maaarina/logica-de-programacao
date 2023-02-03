@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação - Repetindo ações</title>
+</head>
+
+<body>
+    <h1>Outros loops</h1>
+    <h2>"Do While" </h2>
+
+    <code>
+        var numero = prompt("Digite um número"); <br>
+        numero = parseInt(numero); <br>
+        <br>
+        var indice = 11; <br>
+        do {  <br>
+            document.write(numero + " x " + indice + " = " + (numero * indice) + " &ltbr&gt "); <br>
+        <br>
+            indice = indice + 1; <br>
+        } while (indice <= 10);
+
+        document.write ("fim do loop") <br>
+    </code>
+    
+    <h3>O "Do While" irá fazer com que a ação seja executada ao menos uma vez, independete do valor da variável 'indice'. Neste caso ela será executada apenas uma vez, mas, se <code>var indice = 1 </code> e <code> while (indice <= 10) </code> então a ação seria executa dez vezes</h3>
+
+    <script>
+        var numero = prompt("Digite um número");
+        numero = parseInt(numero);
+
+        var indice = 11;
+        do { // enquanto 'indice' for menor ou igual a 10 irá repetir a ação
+            document.write(numero + " x " + indice + " = " + (numero * indice) + "<br>");
+
+            indice = indice + 1; // quando o browser finalizar a ação e enquanto 'indice' nao for menor ou igual a 10 o valor do 'indice' será somado com + 1 até que serja finalizado o 'enquanto'
+        } while (indice <= 10);
+
+    </script>
+
+    <hr>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
