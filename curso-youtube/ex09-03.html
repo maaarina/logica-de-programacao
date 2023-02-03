@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação - Repetindo ações</title>
+</head>
+
+<body>
+    <h1>Loop "For"</h1>
+    <h3><code>
+        for (inicilização; condição; incremento) { <br>
+            // código que será repetido}
+    </code>
+    </h3>
+
+    <script>
+
+        var numero = prompt("Digite um número");
+        numero = parseFloat(numero);
+
+        for (var i = 1; i <= 10; i++) { //var 'i' é igual a 1; equanto 'i <= 10' for verdadeiro; então irá somar i +1;
+            document.write(numero + " x " + i + " = " + (numero * i) + "<br>");
+        }
+
+        document.write("Fim do loop");
+
+        // indice = indice + 1;
+        // indice += 1;   <- atalho ""short hand""
+        // indice++; maneira mais simplificada de escrever 'indice = indice + 1' quando queremos somar +1
+
+    </script>
+</body>
+
+</html>
