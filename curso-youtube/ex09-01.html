@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repetindo ações</title>
+    <title>Lógica de programação - Repetindo ações</title>
 </head>
 
 <body>
-    <h1>Problema:</h1>
+    <h1>Problema: </h1>
     <h2>Pedir para o usuário digitar um número e mostrar a tabuada desse número.</h2>
+
+    <p> <br> <br> Entendendo o início do loop utilizando <strong> while </strong> </p>
 
     <script>
 
@@ -19,12 +21,13 @@
 
         var indice = 1;
 
-        while (indice <= 10) {
+        while (indice <= 10) { // enquanto 'indice' for menor ou igual a 10 irá repetir a ação
             document.write(numero + " x " + indice + " = " + (numero * indice) + "<br>");
 
-            indice = indice + 1;
+            indice = indice + 1; // quando o browser finalizar a ação e enquanto 'indice' nao for menor ou igual a 10 o valor do 'indice' será somado com + 1 até que serja finalizado o 'enquanto'
         }
 
+        document.write ("fim do loop")
 
     </script>
 
