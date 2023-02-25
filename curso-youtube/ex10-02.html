@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+</head>
+
+<body>
+    <h1> Atrelando funções à eventos disparados por elementos no HTML </h1>
+    <p> Uma função é um trecho de código que é possível executar mais de uma vez.</p>
+    <h2> Problema: Pedir para o usuário digitar um número e mostrar a tabuada desse número de um a cem. Deve haver a possibilidade de limpar a tabuada e gerar outra com um número diferente. </h2>
+
+    <!--Solução-->
+
+    <button onclick="novaTabuada()"> Nova Tabuada </button>
+    <!--Quando o botão for clicado ele irá executar o código que estiver entre as aspas. Então o que for passado entre as aspas será levado para o javascript que funcionará como uma função-->
+    <button onclick="limparTabuada()"> Limpar Tabuada </button> <!--de acordo com a sintaxe, a função deve haver o ()-->
+
+    <div id="tabuada"> </div>
+
+    <script>
+        
+        var output = document.querySelector("#tabuada");
+        var mensagem = "";
+
+        function novaTabuada() {
+            var numeroTabuada = prompt("digite um número para gerar uma nova tabuada");
+
+            for (var i = 1; i <= 100; i++) {
+                mensagem += numeroTabuada + " x " + i + " = " + (numeroTabuada * i) + "<br>";
+                tabuada.innerHTML = mensagem;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
