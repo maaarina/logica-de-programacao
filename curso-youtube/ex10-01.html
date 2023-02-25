@@ -9,10 +9,11 @@
 </head>
 
 <body>
-    <h1> inserção de conteúdo HTML com Javascript</h1>
+    <h1> Inserção de conteúdo HTML com Javascript</h1>
     <div id="output"> </div>
 
     <script>
+
         var output = document.querySelector("#output"); //criei uma variável e armazenei nela uma referência do elemento do mundo html em Javascript
 
         var mensagem = "";
@@ -21,7 +22,7 @@
             mensagem += "i: " + i + "<br>";
         }
 
-        output.innerHTML = mensagem; // o innerHTML recebe um valor que altera a referência do elemento sendo refletido visualmente no mundo HTML. Nesse caso todas as informações da variável mensagem passou a fazer parte da div#output
+        output.innerHTML = mensagem; // o innerHTML recebe um valor que altera a referência do elemento sendo refletido visualmente no mundo HTML. Nesse caso, todas as informações da variável mensagem passou a fazer parte da div#output
 
         //essa é a maneira mais sucinta de armazenar informações do HTML no JS (pelas duas que mostrou nessa aula), pois uma variável é criada apenas para manter as informações, concatenações, etc.. e após isso o conteúdo será passado através do innerHTML para o elemento de referência.
 
