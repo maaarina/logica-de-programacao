@@ -28,18 +28,18 @@
 
         function novaTabuada() {
             var numeroTabuada = prompt("digite um número para gerar uma nova tabuada");
-            numeroTabuada = parseFloat(numeroTabuada);
+            numeroTabuada = parseFloat(numeroTabuada); //tonar a string em numero 
 
-            limparTabuada();
+            limparTabuada(); // "função void"
 
             for (var i = 1; i <= 100; i++) {
                 mensagem += numeroTabuada + " x " + i + " = " + (numeroTabuada * i) + "<br>";   
             }
-            tabuada.innerHTML = mensagem;
+            tabuada.innerHTML = mensagem; //o valor que estiver na var mensagem será transmitido na div tabuada através do innerHTML
         }
 
         function limparTabuada() {
-            mensagem = " ";
+            mensagem = " "; //retorna a string vazia
             tabuada.innerHTML = mensagem;
         }
 
