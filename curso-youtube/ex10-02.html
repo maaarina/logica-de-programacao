@@ -19,22 +19,29 @@
     <!--Quando o botão for clicado ele irá executar o código que estiver entre as aspas. Então o que for passado entre as aspas será levado para o javascript que funcionará como uma função-->
     <button onclick="limparTabuada()"> Limpar Tabuada </button> <!--de acordo com a sintaxe, a função deve haver o ()-->
 
-    <div id="tabuada"> </div>
+    <div class="tabuada"> </div>
 
     <script>
         
-        var output = document.querySelector("#tabuada");
-        var mensagem = "";
+        var tabuada = document.querySelector(".tabuada");
+        var mensagem = ""; //a variável está vazia pois nas funções será atrelada a ela um valor
 
         function novaTabuada() {
             var numeroTabuada = prompt("digite um número para gerar uma nova tabuada");
+            numeroTabuada = parseFloat(numeroTabuada);
+
+            limparTabuada();
 
             for (var i = 1; i <= 100; i++) {
-                mensagem += numeroTabuada + " x " + i + " = " + (numeroTabuada * i) + "<br>";
-                tabuada.innerHTML = mensagem;
+                mensagem += numeroTabuada + " x " + i + " = " + (numeroTabuada * i) + "<br>";   
             }
+            tabuada.innerHTML = mensagem;
         }
 
+        function limparTabuada() {
+            mensagem = " ";
+            tabuada.innerHTML = mensagem;
+        }
 
     </script>
 </body>
