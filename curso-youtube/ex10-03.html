@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio com funções</title>
+</head>
+
+<body>
+    <h2> mini calculadora com funções de somar, subtrair, dividir e multiplicar</h2>
+
+    <button onclick="soma()"> + </button>
+    <button onclick="subtração()"> - </button>
+    <button onclick="divisão()"> / </button>
+    <button onclick="multiplicação()"> * </button>
+
+    <div class="output"> </div>
+
+    <script>
+        var n1 = prompt("digite um numero");
+        n1 = parseFloat(n1);
+
+        resultado();
+
+
+        function resultado() {
+            var output = document.querySelector(".output");
+            output.innerHTML = n1
+        }
+
+        function soma() {
+            var n = prompt(" numero para somar");
+            n = parseFloat(n);
+
+            n1 = n1 + n;
+
+            resultado();
+        }
+
+        function subtração() {
+            var n = prompt("numero para subtrair");
+            n = parseFloat(n);
+
+            n1 = n1 - n;
+
+            resultado();
+            
+        }
+
+        function divisão() {
+            var n = prompt("numero para dividir");
+            n = parseFloat(n);
+
+            n1 = n1 / n;
+
+            resultado();
+            
+        }
+
+        function multiplicação() {
+            var n = prompt("numero para multiplicar");
+            n = parseFloat(n);
+
+            n1 = n1 * n;
+
+            resultado();
+            
+        }
+
+    </script>
+
+</body>
+
+</html>
