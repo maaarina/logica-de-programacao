@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções que recebem parâmetros</title>
+</head>
+
+<body>
+    <p> <strong>PROBLEMA</strong> Pedir para o usuário digitar dois números que representem o valor da altura e largura, em seguida crie um botão que mostre a área total. </p>
+
+    <button onclick="mostrarArea(altura, largura)"> Mostrar área </button>
+    <!--é preciso informar para a função 'mostrarArea' os valores que queremos fazer o calculo, para isso colocamos as informações dentro da função entre os parêteses. E isso é o que chamamos de parâmetro-->
+
+    <script>
+
+        var altura = prompt("Digite a altura");
+        altura = parseFloat(altura);
+
+        var largura = prompt("Digite a largura");
+        base = parseFloat(base);
+
+        function mostrarArea(a, l) { // a função recebe o parâmetro 'area' para armazenar a informação da '(largura, base)'
+            alert(" recenbendo parâmetro a: " + a);
+            alert(" recenbendo parâmetro l: " + l);
+            alert(" area total: " + altura * largura);
+        }
+
+    </script>
+
+</body>
+
+</html>
