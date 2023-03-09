@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <p>Fazer o ex10-3 de forma eficiente com apenas uma única função</p>
+
+    <button onclick="calcular('+')"> + </button>
+    <button onclick="calcular('-')"> - </button>
+    <button onclick="calcular('*')"> * </button>
+    <button onclick="calcular('/')"> / </button>
+
+    <div class="output"> </div>
+
+    <script>
+        var n1 = prompt("digite um numero");
+        n1 = parseFloat(n1);
+
+        resultado();
+
+
+        function resultado() {
+            var output = document.querySelector(".output");
+            output.innerHTML = n1
+        }
+
+        function calcular(simbolo) { //temos uma única função que vai receber um símbolo como parâmetro 
+
+            var n = prompt("digite um numero");
+            n = parseFloat(n);
+
+            switch(simbolo) { //então aqui, caso o símbolo seja '+' irá somar, etc;
+                case '+':
+                    n1 += n;
+                    break;
+
+                case '-':
+                    n1 -= n;
+                    break;
+
+                case '*':
+                    n1 *= n;
+                    break;
+
+                case '/':
+                    n1 /= n;
+                    break;
+            }
+
+            resultado();
+        }
+
+    </script>
+
+    
+</body>
+</html>
