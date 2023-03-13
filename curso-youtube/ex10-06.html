@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funções que retornam valores</title>
+</head>
+
+<body>
+    <p><strong>Problema:</strong> Pedir para o usuário digitar dois número que representam os lados de um triângulo.
+        Mostrar na tela a área total de duas distintas formas: num alert ou na div#output(dependendo do botão clicado).
+    </p>
+
+    <button onclick="mostrarAreaAlert()">Mostrar área no alert </button>
+    <button onclick="mostrarAreaDiv()">mostrar área na div#output </button>
+
+    <div id="output"> </div>
+
+    <script>
+
+        function mostrarAreaAlert() {
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+
+            var area = calcularArea(altura, largura);
+
+            alert("a área total é: " + area);
+        }
+
+        function mostrarAreaDiv() {
+            var altura = prompt("Digite a altura");
+            altura = parseFloat(altura);
+            
+            var largura = prompt("Digite a largura");
+            largura = parseFloat(largura);
+            
+            var area = calcularArea(altura, largura);
+
+            document.querySelector('#output').innerHTML = "a área total é: " + area;
+        }
+
+        function calcularArea(a, l) {
+            return l * a; //função para retornar um valor quando for chamado
+        }
+    </script>
+
+</body>
+
+</html>
