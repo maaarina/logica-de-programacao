@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de string</title>
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(174, 174, 250), rgb(250, 129, 250));
+            font: 20px bold arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = prompt('Qual seu nome?')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras` + '<br>')
+        document.write(`Seu nome em maiúsculas: ${nome.toUpperCase()}` + '<br>')
+        document.write(`Seu nome em minúsculas: ${nome.toLowerCase()}`)
+    </script>
+    
+</body>
+</html>
