@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos e de atribuição</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        var a = 5 + 3
+        var b = a % 5
+        var c = 5 * b ** 2
+        var d = 10 - a / 2
+        var e = 6 * 2 / d
+        var f = b % e + 4 / e
+
+        document.write(`a = 5 + 3 = ${a} <br>
+        b = a % 5 = ${b} <br>
+        c = 5 * b ** 2 = ${c} <br>
+        d = 10 - a / 2 = ${d} <br>
+        e = 6 * 2 / d = ${e} <br>
+        f = b % e + 4 / e = ${f} <br>`)
+
+
+        //Auto Atribuição :
+        
+        var n = 3
+        // n = n + 4
+        n += 4
+        //n = n - 5
+        n-= 5
+        //n = n * 4
+        n *= 4
+        //n = n / 2
+        n /= 2
+        //n = n ** 2
+        n **= 2
+        //n = n % 5  
+        n %= 5
+
+        //Operadores de incremento:
+
+        var x = 5 
+        x = x + 1 // == x += 1  == x++
+        x = x - 1 // == x -= 1 == x-- 
+
+
+
+    </script>
+
+</body>
+
+</html>
