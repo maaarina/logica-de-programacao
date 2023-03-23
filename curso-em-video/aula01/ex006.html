@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background: linear-gradient(to right, rgb(250, 184, 250), rgb(187, 187, 247));
+
+            font-size: 20px;
+            text-align: center;
+            line-height: 400px;
+
+            height: 400px;
+            width: 400px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Interaja... </div>
+
+    <script>
+        var a = document.getElementById('area'); //a variável vai fazer uma ligação com o elemento 'area'
+
+        function clicar() {  
+            a.innerText = 'Clicou!'
+            a.style.background = 'rgb(187, 187, 247)'
+        }
+
+        function entrar(params) {
+            a.innerText = 'entrou'
+        }
+
+        function sair(params) {
+            a.innerHTML = 'saiu'
+            a.style.background = 'rgb(250, 184, 250)'
+        }
+
+
+
+    </script>
+
+</body>
+</html>
