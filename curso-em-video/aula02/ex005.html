@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Iniciando estudos com DOM </title>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+
+    <div id="text"> Texto qualquer </div>
+    <div name="text2"> texto qualquer</div>
+    <div class="text3"> texto qualquer</div>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[1]; 
+
+        window.alert(p1.innerText);
+        document.write('usando o getElementsByTagName para gerar esse texto: ' + p1.innerHTML) 
+        //a diferença entre o innerText para o innerHTMl é que o text pega apenas o texto sem as tags filhas, sem a formatação, ja o innerHTML pega o HTML inteiro, inclusive as filhas
+
+        var dv = document.getElementById('text');
+        dv.style.background = 'pink'
+        dv.innerText = 'Texto alterado por javascript -> getElementsById'
+
+        var dv2 = document.getElementsByName('text2') [0]
+        dv2.style.color = 'green'
+        dv2.innerText = ' Por nome -> getElementsByName()'
+
+        var dv3 = document.getElementsByClassName('text3') [0]
+        dv3.innerText = 'Por Classe -> getElementsByClassName()'
+
+        d = document.querySelector('div#text')
+        d.style.color = 'blue'
+    </script>
+    
+</body>
+</html>
