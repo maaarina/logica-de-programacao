@@ -10,7 +10,7 @@ function carregar(params) {
     msg_area.innerHTML = `Agora são ${hours}:${minutos} horas`
 
     if (hours >= 0 && hours < 12) {
-        document.querySelector('img').src = '/logica-de-programacao/curso-em-video/exercícios-propostos/img/morning.png'
+        document.querySelector('img').src = '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homem'
 
         document.body.style.background = '#FFFF8E'
 
