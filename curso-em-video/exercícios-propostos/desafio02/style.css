@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(to right, rgb(174, 174, 243), rgb(250, 129, 250));
+
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif; 
+}
+
+#main-tittle {
+    text-align: center;
+
+    padding-top: 2.5rem;
+}
+
+section{
+    background: whitesmoke;
+
+    border-radius: 10px;
+    box-shadow:  8px 9px 8px -4px rgba(46, 45, 46, 0.425);
+
+    margin: auto;
+    padding: 10px;
+    width: 40rem;
+}
+
+footer {
+    text-align: center;
+}
