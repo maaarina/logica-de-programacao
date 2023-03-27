@@ -22,22 +22,18 @@ function verificar() {
 
             if (idade >= 0 && idade <= 10) {
 
-                //criança
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homemCrianca.png')
 
             } else if (idade >= 10 && idade < 21){
 
-                //jovem
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homemJovem.png')
 
             } else if (idade >= 21 && idade < 50) {
 
-                //adulto
-                img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homemJovem.png')
+                img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homemAdulto.png')
 
             } else {
 
-                //velho
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/homemVelho.png')
 
             }
@@ -49,29 +45,25 @@ function verificar() {
             if (idade >= 0 && idade <= 10) {
                 
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherCrianca.png')
-                //criança
 
             } else if (idade >= 10 && idade < 21){
 
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherJovem.png')
-                //jovem
 
             } else if (idade >= 21 && idade < 50) {
 
-                img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherJovem.png')
-                //adulto
+                img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherAdulta.png')
 
             } else {
 
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherVelha.png')
-                //velho
 
             }
         }
 
-        resultado.style.textAling ='center'
         resultado.innerHTML = `Detectamos ${gênero} com ${idade} anos`
-
+        resultado.style.textAling ='center'
+        
         resultado.appendChild(img)
     }
 
