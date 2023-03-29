@@ -21,6 +21,11 @@ section{
     width: 40rem;
 }
 
+#resultado{
+    display: flex;
+    flex-direction: row;
+}
+
 footer {
     text-align: center;
 }
