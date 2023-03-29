@@ -63,9 +63,6 @@ function verificar() {
         
         resultado.innerHTML = `Detectamos ${gênero} com ${idade} anos : `
         resultado.appendChild(img)
-
-        resultado.style.display ='flex'
-        resultado.style.flexDirection = 'row'
     }
 
 } 
