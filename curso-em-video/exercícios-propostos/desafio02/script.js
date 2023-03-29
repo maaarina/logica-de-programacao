@@ -57,14 +57,15 @@ function verificar() {
             } else {
 
                 img.setAttribute('src', '/logica-de-programacao/curso-em-video/exercícios-propostos/img/mulherVelha.png')
-
+                
             }
         }
-
-        resultado.innerHTML = `Detectamos ${gênero} com ${idade} anos`
-        resultado.style.textAling ='center'
         
+        resultado.innerHTML = `Detectamos ${gênero} com ${idade} anos : `
         resultado.appendChild(img)
+
+        resultado.style.display ='flex'
+        resultado.style.flexDirection = 'row'
     }
 
 } 
