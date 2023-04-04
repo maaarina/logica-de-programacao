@@ -16,21 +16,20 @@
     </header>
 
     <section>
-        <p> <strong> Início: </strong>
-            <input type="number" name="inicio" id="inicio">
-        </p>
+        <div class="dados">
+            <p> <strong> Início: </strong>
+                <input type="number" name="inicio" id="inicio">
+            </p>
+            <p> <strong> Fim: </strong>
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p> <strong> Passo: </strong>
+                <input type="number" name="passo" id="passo">
+            </p>
+            <input type="button" value="Contar" id="botao" onclick="contar()">
+        </div>
 
-        <p> <strong> Fim: </strong>
-            <input type="number" name="fim" id="fim">
-        </p>
-
-        <p> <strong> Passo: </strong>
-            <input type="number" name="passo" id="passo">
-        </p>
-
-        <input type="button" value="Contar" id="botao" onclick="contar()">
-
-        <div class="resultado">
+        <div id="resultado">
             <p>Preparando a contagem... </p>
         </div>
 
@@ -39,6 +38,8 @@
     <footer>
         <p> &copy; CursoEmVideo </p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
