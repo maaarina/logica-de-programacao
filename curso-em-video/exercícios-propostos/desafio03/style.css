@@ -31,6 +31,12 @@ section{
 
     padding: 12px 24px;
     cursor: pointer;
+
+    transition: 2s;
+}
+#botao:hover {
+    background: rgb(200, 200, 252);
+    transition: 0.5s;
 }
 
 footer {
