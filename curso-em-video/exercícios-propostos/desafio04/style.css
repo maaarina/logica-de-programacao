@@ -57,7 +57,7 @@ section{
     width: 40rem;
 }
 
-/* #botao {
+#botao {
     background: linear-gradient(to right, rgb(194, 194, 248), rgb(245, 184, 245));;
 
     font-size: 18px;
@@ -65,7 +65,7 @@ section{
     border: 2px solid rgb(83, 16, 85);
     border-radius: 6%;
 
-    padding: 12px 24px;
+    padding: 5px 10px;
     cursor: pointer;
 
     transition: 2s;
@@ -73,7 +73,11 @@ section{
 #botao:hover {
     background: rgb(200, 200, 252);
     transition: 0.5s;
-} */
+}
+
+#divRes {
+    background: linear-gradient(to right, rgb(194, 194, 248), rgb(245, 184, 245));
+}
 
 footer {
     text-align: center;
