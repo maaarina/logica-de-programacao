@@ -1,3 +1,4 @@
+/*
 function calcular() {
     let num = document.getElementById('n')
     let result = document.getElementById('resultado')
@@ -15,4 +16,9 @@ function calcular() {
             result.innerHTML += (`${ n} x ${i} = ${n * i } ${pulo + pulo}`);
         }
     }
+} 
+*/
+
+function calcular(){
+    
 }
