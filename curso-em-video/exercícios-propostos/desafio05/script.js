@@ -1,24 +1,20 @@
-/*
 function calcular() {
     let num = document.getElementById('n')
     let result = document.getElementById('resultado')
 
-    if (n.value.length == 0) {
+    if (n.value.length === 0) {
         alert('Digite um numero')
     } else {
 
         let n = Number(num.value)
         result.innerHTML = ''
 
-        for (var i = 1; i <= 10; i++) {
+        let i = 1;
 
-            let pulo = innerHTML = '<br>'
-            result.innerHTML += (`${ n} x ${i} = ${n * i } ${pulo + pulo}`);
+        while (i <= 10) {
+            let pulo = '<br> <br>'
+            result.innerHTML += `${n} x ${i} = ${n * i} ${pulo}`;
+            i++;
         }
     }
-} 
-*/
-
-function calcular(){
-    
 }
