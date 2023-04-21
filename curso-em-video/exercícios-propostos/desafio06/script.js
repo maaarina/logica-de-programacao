@@ -1,7 +1,6 @@
-var numero = document.getElementById('numero')
-var numero = parseInt(numero.value)
-var resultadoLista = document.getElementById('resultadoLista')
-var resultado = document.getElementById('resultado')
+var numero = document.getElementById("num")
+var lista = document.getElementById("lista")
+var resultado = document.getElementById("divRes")
 
 var valores = []
 
@@ -22,43 +21,45 @@ function inLista(n, l) {
 }
 
 function adicionar() {
-    if (isNumero(numero.value) && !inLista(numero.value, valores)) {
-        alert('tudo ok')
+    if (isNumero(num.value) && !inLista(num.value, valores)) { // se número foi realmente um número (isNumero) e se ele não estiver na lista (inLista) 
+        valores.push(Number(numero.value))
+
+        let item = document.createElement('option')
+
+        item.text = `Valor ${numero.value} adicionado`
+        lista.appendChild(item)
+        resultado.innerHTML = ''
     } else {
         alert('inválido')
     }
+    numero.value = ''
+    num.focus()
 }
 
-/*
-        function adicionarNumero() {
-            var inputNumero = document.getElementById("numero");
-            var numero = parseInt(inputNumero.value);
+function finalizar() {
+    if (valores.length == 0) {
+        alert('sem resultados')
+    } else {
+        let total = valores.length
+        let maior = valores [0]
+        let menor = valores [0]
+        let soma = 0
+        let media = 0
 
-            if (numero >= 1 && numero <= 100) {
-                numeros.push(numero);
-                inputNumero.value = "";
-            } else {
-                alert("Por favor, digite um número entre 1 e 100.");
-            }
+        for (let pos in valores){
+            soma += valores[pos]
+             if (valores [pos] > maior) {
+                maior = valores[pos]
+             } else {
+                menor = valores[pos]
+             }
         }
 
-        function exibirResultado() {
-            var resultado = document.getElementById("resultado");
+        resultado.innerHTML = ''
+        resultado.innerHTML += `<p>Ao todo temos ${total} valores cadastrados</p>`
+        resultado.innerHTML += `<p>O maior valor informado foi ${maior} </p>`
+        resultado.innerHTML += `<p> O menor valor informado foi ${menor} </p>`
+        resultado.innerHTML += `<p> A soma dos valores é ${soma} </p>`
 
-            if (numeros.length === 0) {
-                resultado.textContent = "Nenhum número foi adicionado ainda.";
-                return;
-            }
-
-            var totalNumeros = numeros.length;
-            var maiorNumero = Math.max.apply(null, numeros);
-            var menorNumero = Math.min.apply(null, numeros);
-
-            resultado.textContent = "Total de números adicionados: " + totalNumeros + "\n"
-                + "Maior número adicionado: " + maiorNumero + "\n"
-                + "Menor número adicionado: " + menorNumero;
-        }
-*/
-
-
-//resultadoLista.innerHTML = '<br> alo'
+    }
+}
