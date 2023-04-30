@@ -1,0 +1,31 @@
+<body>
+    <canvas width="600px" height="400px" background="red">
+    </canvas>
+
+    <script>
+        var tela = document.querySelector('canvas')
+        var pincel = tela.getContext('2d')
+
+        //pincel.fillStyle = 'lightgreen'
+        //pincel.fillRect(0, 0, 600, 400) // O fillRect() precisa de algumas informações para conseguir desenhar o retângulo, que estarão na ordem: posição inicial X do “pincel”, posição inicial Y do “pincel”, posição final X do “pincel”, posição final Y do “pincel”.
+        pincel.fillStyle = 'darkgreen'
+        pincel.fillRect(0, 0, 200, 400)
+
+        pincel.fillStyle = 'red'
+        pincel.fillRect(200, 0, 200, 400)
+
+        pincel.fillStyle = 'yellow'
+        pincel.fillRect(400, 0, 200, 400)
+
+        pincel.fillStyle = 'black';
+        pincel.beginPath();
+        pincel.moveTo(300, 200);
+        pincel.lineTo(200, 400);
+        pincel.lineTo(400, 400);
+        pincel.fill();
+
+    </script>
+
+</body>
+
+</html>
