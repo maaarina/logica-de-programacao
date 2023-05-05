@@ -20,11 +20,16 @@
 
 
         pincel.fillStyle = 'black';
-        pincel.beginPath();
-        pincel.moveTo(300, 200);
-        pincel.lineTo(200, 400);
-        pincel.lineTo(400, 400);
-        pincel.fill();
+        pincel.beginPath()
+        pincel.moveTo(300, 200) // esse será o ponto inicial
+        pincel.lineTo(200, 400)
+        pincel.lineTo(400, 400)
+        pincel.fill()
+
+        pincel.fillStyle = 'whiteSmoke'
+        pincel.beginPath()
+        pincel.arc(300, 200, 45, 0, 2 * 3.14) //eixo x, eixo y, tamanho/raio, ângulo inicial, ângulo final
+        pincel.fill()
         
     </script>
 
