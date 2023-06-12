@@ -4,12 +4,9 @@ Este repositório é destinado para quem deseja aprimorar suas habilidades em l�
 
 ## Conteúdo do Repositório
 
-O repositório está organizado em pastas, cada uma contendo exercícios e projetos específicos, com o objetivo de oferecer uma experiência de aprendizado mais estruturada. Além disso, há alumas anotações e resumos no [Notion](https://www.notion.so/L-gica-de-Programa-o-85a5bd25f0ce4628bdf42f4397a7592d) para ajudar a consolidar o conhecimento adquirido durante o estudo dos exercícios.
+O repositório está organizado em pastas, cada uma contendo exercícios e projetos específicos. Além disso, há alumas anotações e resumos no [Notion](https://www.notion.so/L-gica-de-Programa-o-85a5bd25f0ce4628bdf42f4397a7592d) para ajudar a consolidar o conhecimento adquirido durante o estudo dos exercícios.
 
-## Como Utilizar
-Para utilizar este repositório, basta cloná-lo para sua máquina local. Em seguida, explore as pastas e arquivos para acessar os exercícios e projetos específicos. As anotações e resumos no Notion também estão disponíveis para consulta.
-
-## Contribuições
+## Contribuições e feddbacks
 Contribuições são bem-vindas neste repositório! Se você deseja adicionar novos exercícios ou projetos, ou aprimorar os existentes, sinta-se à vontade para enviar um pull request.
 
 <b> Este é apenas um repositório de alguém que está iniciando, então não há nada muito avançado, então sujestões de melhorias são muito bem-vidas ! :)
