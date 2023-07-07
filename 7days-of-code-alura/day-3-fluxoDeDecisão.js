@@ -26,3 +26,15 @@ if (pergunta2 === "1") {
 } else {
     console.log("Ótimo, continue estudando");
 }
+
+/*
+const pergunta3 = prompt("Você deseja aprender mais alguma tecnologia? Digite 'sim' em caso positivo ou 'não' em caso negativo");
+
+while (pergunta3 === "sim") {
+    let novaTecnologia = prompt("Qual?");
+
+    alert(`${novaTecnologia} é realmente uma tecnologia muito legal!`)
+    msg = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'sim' em caso positivo.");
+
+    break
+} problema com o loop*/
